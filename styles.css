@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    font-size: 18px; /* Use a slightly smaller base font size for mobile */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.options label {
+    font-size: 1.2em;
+    display: block;
+    padding: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result-container {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#status-container {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Progress Bar Styles */
+#progress-bar {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 30px;
+}
+
+.progress-segment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: white;
+    height: 100%;
+}
+
+#correct-bar {
+    background-color: green;
+    width: 0;
+}
+
+#incorrect-bar {
+    background-color: red;
+    width: 0;
+}
+
+#skipped-bar {
+    background-color: orange;
+    width: 0;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    #result-container, #status-container {
+        font-size: 1.2em;
+    }
+
+    .options label {
+        font-size: 1em;
+        padding: 8px;
+    }
+}
